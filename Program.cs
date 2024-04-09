@@ -4,12 +4,12 @@ Console.Write("Введите количество элементов масси
 int m = Convert.ToInt32(Console.ReadLine());
 string [] stringArray = new string [m];
 
-//Ввод данных в массив.
+//Ввод данных в массивы.
 void array(string [] stringArray)
 {
   for (int i = 0;i<stringArray.Length;i++)
   {
-     Console.WriteLine($»Введите {i+1} элемент массива»);
+     Console.WriteLine($"Введите {i+1} элемент массива");
      stringArray[i] = Console.ReadLine();
   }
 }
@@ -35,3 +35,15 @@ string [] count(string [] stringArray)
   }
   return rez;
 }
+//Выводим массивы с <=3 элементами на экран
+void printA(string [] stringArray)
+{
+    Console.Write("[");
+    for (int i = 0;i<stringArray.Length;i++)
+    {
+    Console.Write($"‘{stringArray[i]}’ ");
+    }
+    Console.Write("]");
+}
+array(stringArray);
+printA(count(stringArray));
