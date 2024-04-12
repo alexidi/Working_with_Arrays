@@ -13,7 +13,7 @@ void array(string [] stringArray)
      stringArray[i] = Console.ReadLine();
   }
 }
-//Определяем строки с <=3 символами
+//Определяем массивы с <=3 символами
 string [] count(string [] stringArray)
 {
   int n = 0;
